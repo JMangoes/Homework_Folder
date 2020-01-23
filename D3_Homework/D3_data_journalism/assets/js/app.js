@@ -185,7 +185,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
         .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
     var povertyLabel = xlabelsGroup.append("text")
-        .classed("aText", true)
+        .classed("axis-text", true)
         .classed("active", true)
         .attr("x", 0)
         .attr("y", 20)
@@ -193,7 +193,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
         .text("In Poverty (%)");
 
     var ageLabel = xlabelsGroup.append("text")
-        .classed("aText", true)
+        .classed("axis-text", true)
         .classed("inactive", true)
         .attr("x", 0)
         .attr("y", 40)
@@ -201,7 +201,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
         .text("Age (Median)")
 
     var incomeLabel = xlabelsGroup.append("text")
-        .classed("aText", true)
+        .classed("axis-text", true)
         .classed("inactive", true)
         .attr("x", 0)
         .attr("y", 60)
@@ -212,7 +212,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
         .attr("transform", `translate(${0 - margin.left/4}, ${(height/2)})`);
 
     var healthLabel = yLabelsGroup.append("text")
-        .classed("aText", true)
+        .classed("axis-text", true)
         .classed("active", true)
         .attr("x", 0)
         .attr("y", 0 - 20)
@@ -222,7 +222,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
         .text("Lacks Healthcare (%)");
 
     var smokesLabel = yLabelsGroup.append("text")
-        .classed("aText", true)
+        .classed("axis-text", true)
         .classed("inactive", true)
         .attr("x", 0)
         .attr("y", 0 - 40)
@@ -232,7 +232,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
         .text("Smokes (%)");
 
     var obeseLabel = yLabelsGroup.append("text")
-        .classed("aText", true)
+        .classed("axis-text", true)
         .classed("inactive", true)
         .attr("x", 0)
         .attr("y", 0 - 60)
